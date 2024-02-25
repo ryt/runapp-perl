@@ -10,11 +10,11 @@ Command line helper for gunicorn app processes/daemons.
 Instructions:
 
 1. Make this script executable & create a symbolic link to it in the app directory:
-- chmod +x run_app.pl
-- ln -s ../run_app.pl run_app
+- chmod +x runapp.pl
+- ln -s ../runapp.pl runapp
 
-2. Configure app settings in run_app.conf file.
-- vi run_app.conf
+2. Configure app settings in runapp.conf file.
+- vi runapp.conf
 - { appname => hello } etc...
 
 3. Create a "pids" directory:
@@ -22,19 +22,19 @@ Instructions:
 
 Usage:
 
-./run_app start
-./run_app stop
-./run_app restart
-./run_app reload
-./run_app list
-./run_app
+./runapp start
+./runapp stop
+./runapp restart
+./runapp reload
+./runapp list
+./runapp
 
 =cut
 
 
 # Specific app settings for gunicorn:
 
-my $config = do("./run_app.conf");
+my $config = do("./runapp.conf");
 
 my $appname = $config->{appname}; # e.g. hellopy
 my $appcall = $config->{appcall}; # e.g. app:hello
