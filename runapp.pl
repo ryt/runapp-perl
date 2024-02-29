@@ -2,8 +2,8 @@
 use strict;
 use warnings;
 
-my $v="0.0.1";
-my $man='
+my $v = "0.0.1";
+my $man = '
 Copyright (c) 2024 Ray Mentose.
 
 Command line helper for gunicorn app processes/daemons.
