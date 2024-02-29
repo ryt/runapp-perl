@@ -2,8 +2,8 @@
 use strict;
 use warnings;
 
-=pod
-
+my $v="0.0.1";
+my $man='
 Copyright (c) 2024 Ray Mentose.
 
 Command line helper for gunicorn app processes/daemons.
@@ -30,7 +30,7 @@ Usage:
 ./runapp list
 ./runapp
 
-=cut
+';
 
 
 # Specific app settings for gunicorn:
@@ -82,6 +82,10 @@ if ( $command eq 'start' ) {
 } elsif ( $command eq 'restart' or $command eq 'reload' ) {
   $cme = 'restart';
   $run = "$cm_stop && $cm_start";
+} elsif ( $command eq 'help' or $command eq '--help' or $command eq '-h' or $command eq 'man' ) {
+  print $man; exit;
+} elsif ( $command eq 'version' or $command eq '--version' or $command eq '-v' ) {
+  print "Version $v\n"; exit;
 } else {
   $cme = 'list';
   $run = $cm_list;
