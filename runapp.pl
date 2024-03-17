@@ -3,8 +3,8 @@ use strict;
 use warnings;
 
 my $v = "0.0.1";
-my $man = '
-Copyright (c) 2024 Ray Mentose.
+my $man = 'Copyright (c) 2024 Ray Mentose.
+Get the latest version on Github at: https://github.com/ryt/runapp.git
 
 Command line helper for gunicorn app processes/daemons.
 
