@@ -1,4 +1,6 @@
-# runapp
+> :atom: Note: A python version of this project is available at [ryt/runapp](https://github.com/ryt/runapp) with improvements and a better command line interface.
+
+# runapp-perl
 
 Perl-based command line helper for gunicorn app processes/daemons.
 
