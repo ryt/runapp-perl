@@ -1,4 +1,4 @@
-> :atom: Note: A python version of this project is available at [ryt/runapp](https://github.com/ryt/runapp) with improvements and a better command line interface.
+> :atom: Note: An improved python version of this project is available at [ryt/runapp](https://github.com/ryt/runapp) with a better CLI interface.
 
 # runapp-perl
 
